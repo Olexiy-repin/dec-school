@@ -1,0 +1,42 @@
+$baseFontSize: 16px;
+
+@function pxToRem($val) {
+  $remSize: $val/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: section08Counter;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container--width {
+  max-width: pxToRem(1171px);
+  min-width: pxToRem(320px);
+  margin: auto;
+}
+
+.title {
+  font-family: GothaB;
+  font-size: pxToRem(48px);
+  line-height: pxToRem(54px);
+}
+
+.main-title {
+  font-family: GothaB;
+  font-size: pxToRem(94px);
+}
+
+.main-subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(40px);
+}

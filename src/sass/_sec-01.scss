@@ -1,0 +1,163 @@
+.sec-01 {
+  background-image: url("img/sec-01/bg-lg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+  padding-top: 3.7rem;
+  padding-bottom: 7.5rem;
+  z-index: 0;
+  position: relative;
+  .logo-container {
+    margin-bottom: .4rem;
+  }
+  .row:first-of-type {
+    margin-bottom: .5rem;
+  }
+  .row:last-of-type [class*=col-]:first-of-type {
+    padding-top: 4.2rem;
+    position: relative;
+    &::after {
+      display: block;
+      content: url("img/sec-01/arrow.png");
+      position: absolute;
+      bottom: 0.7rem;
+      right: 0.7rem;
+    }
+  }
+  .row:last-of-type [class*=col-]:last-of-type {
+    padding-top: 7.4rem;
+    padding-left: 7.2rem;
+  }
+}
+
+.sec-01__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 4.8rem;
+}
+
+.logo-container {
+  .sec-01__logo {
+    display: block;
+  }
+}
+
+.sec-01__header-telephone {
+  display: flex;
+  align-items: center;
+  font-family: GothaM;
+  font-size: pxToRem(16px);
+  color: #212121;
+  i {
+    margin-right: .6rem;
+  }
+  &:hover {
+    transition: all .5s linear;
+    opacity: .5;
+  }
+}
+
+.sec-01__date {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  color: #212121;
+  margin-bottom: 2.2rem;
+}
+
+.main-title-container {
+  margin-bottom: 3.5rem;
+}
+
+.sec-01__title {
+  text-indent: -7px;
+  letter-spacing: 4px;
+}
+
+.sec-01__before-title {
+  font-family: GothaB;
+  font-size: 1rem;
+  color: #212121;
+  margin-bottom: 1.3rem;
+}
+
+.sec-01__form-title {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  margin-bottom: 1.1rem;
+}
+
+.sec-01__form-text {
+  font-family: GothaR;
+  font-size: 1rem;
+  color: #212121;
+  line-height: pxToRem(25px);
+  padding-right: 6rem;
+  span {
+    font-family: GothaM;
+    color: #15b4af;
+  }
+}
+
+// SECOND COL
+.main-img-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    display: block;
+    width: 404px;
+    margin-left: -0.4rem;
+  }
+}
+.sec-01__btn {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  font-family: GothaB;
+  font-size: pxToRem(14px);
+  width: 100%;
+  background-color: #15b4af;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-top: -.2rem;
+}
+
+// THIRD COL
+.sec-01__header-geolocation {
+  font-family: GothaM;
+  font-size: 1rem;
+  color: #2d2d2d;
+  line-height: pxToRem(25px);
+  display: block;
+  margin-bottom: 7rem;
+  i {
+    display: block;
+    margin-bottom: -1rem;
+  }
+  &:hover {
+    transition: all .5s linear;
+    opacity: .5;
+  }
+}
+
+.sec-01__right-side-title {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  color: #2d2d2d;
+  margin-bottom: .9rem;
+}
+
+.sec-01__right-side-text {
+  font-family: GothaR;
+  font-size: 1rem;
+  color: #2d2d2d;
+  line-height: pxToRem(25px);
+  span {
+    color: #15b4af;
+  }
+}

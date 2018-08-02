@@ -1,0 +1,128 @@
+.sec-09 {
+  padding-top: 1.2rem;
+}
+
+.sec-09__title {
+  font-family: FuturaCB;
+  font-size: 2.1rem;
+  color: #282828;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.9rem;
+  &::before {
+    display: block;
+    content: "";
+    width: 2.5rem;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 0.9rem;
+    left: 1.4rem;
+  }
+}
+
+.sec-09__mentors-container {
+  position: relative;
+  padding-bottom: 1rem;
+  &::after {
+    display: block;
+    content: "";
+    width: 287px;
+    height: 1px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.sec-09__mentor-card {
+  margin-bottom: 1.5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sec-09__mentor-picture {
+  display: block;
+  margin-bottom: .5rem;
+  img {
+    display: block;
+    width: 196px;
+    margin: auto;
+  }
+}
+
+.sec-09__mentor-description {
+  font-family: FuturaL;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sec-09 {
+    padding-top: 3rem;
+  }
+
+  .sec-09__title {
+    text-align: right;
+    padding-right: 1rem;
+    &::before {
+      left: 23.4rem;
+    }
+    br {
+      content: "";
+      &::after {
+        content: "\00a0"
+      }
+    }
+  }
+
+  .sec-09__mentors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .sec-09__mentor-card {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-09 {
+    padding-top: 3.8rem;
+  }
+
+  .sec-09__title {
+    font-size: pxToRem(36px);
+    padding-right: 7.2rem;
+    margin-bottom: 3.6rem;
+    &::before {
+      left: 36.2rem;
+      width: 2.8rem;
+    }
+  }
+
+  .sec-09__mentor-card {
+    width: 25%;
+    margin-bottom: 2.6rem;
+  }
+
+  .sec-09__mentor-picture {
+    img {
+      width: auto;
+    }
+  }
+
+  .sec-09__mentors-container {
+    padding-left: 4.1rem;
+    &::after {
+      bottom: -1rem;
+    }
+  }
+}
