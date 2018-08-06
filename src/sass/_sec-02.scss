@@ -1,5 +1,6 @@
 .sec-02 {
   padding-top: 11.2rem;
+  padding-bottom: 6rem;
 }
 
 .sec-02__list-item {
@@ -20,6 +21,32 @@
 .sec-02__img-container {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  &::before {
+    display: block;
+    content: "переваги";
+    font-family: GothaBL;
+    font-size: pxToRem(80px);
+    color: #eeeeee;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    position: absolute;
+    top: 12.2rem;
+    left: -16.6rem;
+    letter-spacing: 3px
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 25.1rem;
+    width: 37.6rem;
+    background-color: #fcfcfc;
+    position: absolute;
+    left: -6.7rem;
+    top: -3.7rem;
+    z-index: -1;
+  }
 }
 
 .sec-02__text-container {

@@ -484,6 +484,7 @@ a {
 
 .sec-02 {
 	padding-top: 11.2rem;
+	padding-bottom: 6rem;
 }
 
 .sec-02__list-item {
@@ -510,6 +511,34 @@ a {
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
+	position: relative;
+}
+
+.sec-02__img-container::before {
+	display: block;
+	content: "переваги";
+	font-family: GothaBL;
+	font-size: 5rem;
+	color: #eeeeee;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	text-transform: uppercase;
+	position: absolute;
+	top: 12.2rem;
+	left: -16.6rem;
+	letter-spacing: 3px;
+}
+
+.sec-02__img-container::after {
+	display: block;
+	content: "";
+	height: 25.1rem;
+	width: 37.6rem;
+	background-color: #fcfcfc;
+	position: absolute;
+	left: -6.7rem;
+	top: -3.7rem;
+	z-index: -1;
 }
 
 .sec-02__text-container {
@@ -524,6 +553,317 @@ a {
 .sec-02__list {
 	list-style: none;
 	padding-left: 1.5rem;
+}
+
+.sec-03 {
+	padding-top: 5.1rem;
+	position: relative;
+	padding-bottom: 4.3rem;
+}
+
+.sec-03 .container-fluid {
+	padding: 0;
+}
+
+.sec-03::after {
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: -3rem;
+	left: 0;
+	width: 7.5rem;
+	height: 7.5rem;
+	background-color: #edf7fa;
+}
+
+.sec-03__card-title {
+	font-family: GothaB;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.sec-03__card-text {
+	font-family: GothaR;
+	font-size: 0.875rem;
+	color: #787878;
+	line-height: 1.5625rem;
+	padding-right: .5rem;
+}
+
+.sec-03__card-img {
+	display: block;
+	margin-bottom: 1.8rem;
+}
+
+.sec-04 {
+	padding-top: 2.5rem;
+}
+
+.sec-04 .container-fluid {
+	padding: 0;
+}
+
+.sec-04 .owl-carousel .owl-item img {
+	width: auto;
+}
+
+.sec-04 .owl-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 5.6rem;
+	height: 3.8rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sec-04 .owl-nav div {
+	background-color: #fcfcfc;
+	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.sec-04 .owl-nav div:last-of-type {
+	background-color: #15b4af;
+}
+
+.sec-04 .owl-nav div:last-of-type svg {
+	fill: #fff;
+}
+
+.sec-04 .owl-nav div svg {
+	width: 1rem;
+	height: 1rem;
+	fill: #000;
+}
+
+.sec-04 [class*=col-]:last-of-type {
+	position: relative;
+}
+
+.sec-04 [class*=col-]:last-of-type::after {
+	display: block;
+	content: "";
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: #edf7fa;
+	position: absolute;
+	left: -1rem;
+	bottom: -2.3rem;
+}
+
+.sec-04__title {
+	margin-bottom: 1.9rem;
+}
+
+.sec-04__subtitle {
+	font-family: GothaR;
+	font-size: 1.25rem;
+	color: #787878;
+	line-height: 1.875rem;
+	padding-left: 2.1rem;
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.sec-04__subtitle::before {
+	display: block;
+	content: "";
+	width: 2px;
+	height: 2.9rem;
+	background-color: #000;
+	position: absolute;
+	top: .4rem;
+	left: 0;
+}
+
+.sec-04__description {
+	font-family: GothaR;
+	font-size: 1rem;
+	color: #787878;
+	line-height: 1.5625rem;
+	padding-right: 2rem;
+}
+
+.sec-04__text-block {
+	padding-top: 8rem;
+}
+
+.sec-04__slider-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: GothaB;
+	font-size: 1rem;
+	color: #999999;
+	margin-bottom: 1rem;
+}
+
+.sec-04__slider-nav span:first-of-type {
+	color: #000;
+	margin-right: .2rem;
+}
+
+.sec-04__slider-nav span:last-of-type {
+	margin-left: .2rem;
+}
+
+.sec-04__slider-container {
+	padding-top: 1.2rem;
+	position: relative;
+}
+
+.sec-04__slider-container::before {
+	display: block;
+	content: "практика";
+	font-family: GothaBL;
+	font-size: 5rem;
+	color: #eeeeee;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	text-transform: uppercase;
+	position: absolute;
+	top: 16rem;
+	right: -15.6rem;
+	letter-spacing: 3px;
+}
+
+.sec-04__slider-container::after {
+	display: block;
+	content: "";
+	height: 25.1rem;
+	width: 37.6rem;
+	background-color: #fcfcfc;
+	position: absolute;
+	top: -.5rem;
+	right: -5.8rem;
+	z-index: -1;
+}
+
+.sec-05 {
+	padding-top: 9.7rem;
+	padding-bottom: 11.1rem;
+}
+
+.sec-05 .container-fluid {
+	padding: 0;
+}
+
+.sec-05__title {
+	padding-top: 2.2rem;
+	margin-bottom: 4.2rem;
+}
+
+.sec-05__list-title {
+	margin-bottom: .7rem;
+}
+
+.sec-05__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.sec-05__list-item {
+	width: 30%;
+	margin-bottom: 2.8rem;
+}
+
+.sec-05__list-item:nth-of-type(n+4) {
+	margin-bottom: 0;
+}
+
+.sec-05__list-item:nth-of-type(4) .sec-05__list-title p:last-of-type {
+	margin-left: 2rem;
+}
+
+.sec-05__list-item:nth-of-type(5) .sec-05__list-title p:last-of-type {
+	margin-left: 2rem;
+}
+
+.sec-05__first-list-title {
+	margin-bottom: .7rem;
+}
+
+.sec-05__first-list-title p {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	font-family: GothaB;
+	color: #15b4af;
+}
+
+.sec-05__first-list-title p:last-of-type {
+	margin-left: 3.4rem;
+	margin-top: -1rem;
+}
+
+.sec-05__first-list-title p > span {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	font-size: 2.95rem;
+	margin-left: .5rem;
+	margin-bottom: -.4rem;
+}
+
+.sec-05__first-list-title p > span .sec-05__top-count {
+	font-size: 0.875rem;
+	letter-spacing: 3px;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+.sec-05__list-description {
+	font-family: GothaR;
+	font-size: 1rem;
+	line-height: 1.5625rem;
+}
+
+.sec-05__list-title p {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	font-family: GothaB;
+	color: #15b4af;
+}
+
+.sec-05__list-title p span {
+	font-size: 2.95rem;
+	margin-bottom: -.4rem;
+	margin-left: .5rem;
+}
+
+.sec-05__list-title p:last-of-type {
+	margin-left: 4.3rem;
+	font-size: 18px;
+	margin-top: 0.4rem;
 }
 
 @-webkit-keyframes fadeOut {

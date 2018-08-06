@@ -1,218 +1,37 @@
 .sec-03 {
-  padding-top: 2.4rem;
+  padding-top: 5.1rem;
   position: relative;
-  .sec-02__bottom-title {
-    margin-bottom: 1.5rem;
+  padding-bottom: 4.3rem;
+  .container-fluid {
+    padding: 0;
   }
-  .sec-02__bottom-text {
-    margin-bottom: 1.9rem;
-  }
-  .sec-02__bottom-text {
-    span {
-      color: #fc8e59;
-    }
-  }
-}
-
-.sec-03__picture {
-  display: block;
-  margin-bottom: 1.3rem;
-  position: relative;
-  text-align: center;
-  &::before {
+  &::after {
     display: block;
-    content: "Игорь Рыбаков ";
-    font-family: FuturaL;
-    font-size: pxToRem(14px);
+    content: "";
     position: absolute;
-    bottom: -1rem;
-    right: 1.4rem;
-    letter-spacing: 0;
-    color: #646464;
-  }
-  &:last-of-type {
-    margin-bottom: 0;
-    &::before {
-      content: "Оскар Хартманн";
-      bottom: -.3rem;
-    }
+    bottom: -3rem;
+    left: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #edf7fa;
   }
 }
 
-.sec-03__bottom-content {
-  margin-top: 4.7rem;
+.sec-03__card-title {
+  font-family: GothaB;
+  font-size: pxToRem(16px);
+  margin-bottom: 1rem;
 }
 
-.sec-03__bottom-content-text {
-  padding-left: 4.3rem;
-  margin-bottom: 2.5rem;
+.sec-03__card-text {
+  font-family: GothaR;
+  font-size: pxToRem(14px);
+  color: #787878;
+  line-height: pxToRem(25px);
+  padding-right: .5rem;
 }
 
-.sec-03__bottom-title {
-    color: #282828;
-  font-family: FuturaCB;
-  font-size: 2.1rem;
-  letter-spacing: -1px;
-  margin-bottom: 1.6rem;
-  position: relative;
-  padding-right: 4rem;
-  &::before {
-    display: block;
-    content: url("img/sec-03/quote.png");
-    position: absolute;
-    left: -3.6rem;
-    top: -1.1rem;
-  }
-}
-
-.sec-03__bottom-picture {
+.sec-03__card-img {
   display: block;
-  text-align: center;
-}
-
-.sec-03__bottom-subtitle {
-  font-family: FuturaL;
-  font-size: pxToRem(18px);
-  color: #4a4a4a;
-  padding-left: 1.2rem;
-  letter-spacing: -1px;
-  padding-right: 4rem;
-}
-
-@media (min-width: 768px) {
-  .sec-03 {
-    .sec-02__bottom-title {
-      padding-left: 4rem;
-      padding-right: 40%;
-      &::before {
-        left: 1rem;
-        top: 1rem;
-      }
-    }
-
-    .sec-02__bottom-text {
-      padding-left: 1rem;
-      padding-right: 27rem;
-    }
-  }
-
-  .sec-03__picture {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    &:first-of-type {
-      right: 3rem;
-      top: 1.7rem;
-      margin-bottom: 0;
-    }
-    &:last-of-type {
-      top: 11rem;
-      right: 12.7rem;
-    }
-  }
-
-  .sec-03__bottom-content {
-    margin-top: 11.7rem;
-  }
-
-  .sec-03__bottom-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 1rem;
-  }
-
-  .sec-03__bottom-content-text {
-    order: 2;
-    margin-bottom: 0;
-  }
-
-  .sec-03__bottom-title {
-    font-size: pxToRem(30px);
-    margin-bottom: 1rem;
-    &::before {
-      left: -4rem;
-    }
-  }
-
-  .sec-03__bottom-subtitle {
-    padding-left: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sec-03 {
-    padding-top: 9.3rem;
-    padding-bottom: 4rem;
-    .container--width {
-      position: relative;
-    }
-    .sec-02__bottom-title {
-      font-size: pxToRem(30px);
-      padding-left: 10rem;
-      letter-spacing: 0;
-      margin-bottom: 2.5rem;
-      &::before {
-        left: 6.2rem;
-        top: 1.1rem;
-        width: 2.8rem;
-        height: 3px;
-      }
-    }
-    .sec-02__bottom-text {
-      font-size: pxToRem(18px);
-      padding-left: 5.3rem;
-      padding-right: 38.5rem;
-    }
-  }
-
-  .sec-03__picture:before {
-    font-size: pxToRem(18px);
-    right: 8.4rem;
-    letter-spacing: 0;
-    bottom: -2rem;
-  }
-
-  .sec-03__picture:last-of-type:before {
-    bottom: -0.6rem;
-    right: 0.7rem;
-  }
-
-  .sec-03__picture:first-of-type {
-    right: -2.6rem;
-    top: -1.8rem;
-  }
-
-  .sec-03__picture:last-of-type {
-    top: 15.7rem;
-    right: 18.5rem;
-  }
-
-  .sec-03__bottom-content {
-    margin-top: 25.6rem;
-    align-items: flex-start;
-  }
-
-  .sec-03__bottom-title {
-    font-size: pxToRem(36px);
-    letter-spacing: 0;
-    margin-bottom: 1.9rem;
-  }
-
-  .sec-03__bottom-picture {
-    padding-left: 4.2rem;
-    padding-top: 2.4rem;
-  }
-
-  .sec-03__bottom-content-text {
-    padding-top: 8.3rem;
-    padding-left: 4.7rem;
-  }
-
-  .sec-03__bottom-subtitle {
-    padding-right: 7rem;
-    letter-spacing: 0;
-    line-height: 1.2;
-  }
+  margin-bottom: 1.8rem;
 }
