@@ -1,175 +1,90 @@
 .sec-08 {
-  padding-top: 1.3rem;
-}
-
-.sec-08__title {
-  font-family: FuturaCB;
-  font-size: 1.7rem;
-  text-align: center;
-  color: #282828;
+  padding-top: 3.9rem;
+  padding-bottom: 5rem;
   position: relative;
-  margin-bottom: 1.1rem;
-  padding-right: 3rem;
+  .container-fluid {
+    padding: 0;
+  }
+  .row {
+    [class*=col-]:first-of-type {
+      padding-right: 7px;
+    }
+  }
   &::before {
     display: block;
     content: "";
-    width: 2.2rem;
-    height: 2px;
-    background-color: #000;
     position: absolute;
-    top: 0.6rem;
-    left: 5%;
+    top: 52%;
+    left: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #edf7fa;
   }
-}
 
-.sec-08__subtitle {
-  font-family: FuturaC;
-  color: #282828;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  padding: 0 1rem 0 4.5rem;
-  margin-bottom: 2.8rem;
-}
-
-.sec-08__list {
-  padding:  0 1rem 0 4.4rem;
-  margin-bottom: 2.3rem;
-}
-
-.sec-08__list-item {
-  font-family: FuturaL;
-  font-size: pxToRem(17px);
-  color: #282828;
-  line-height: 1.3;
-  margin-bottom: 2rem;
-  letter-spacing: -.5px;
-  position: relative;
-  &::before {
-    counter-increment: section08Counter;
-    display: block;
-    content: "/0" counter(section08Counter);
-    color: #282828;
-    font-family: FuturaCB;
-    font-size: pxToRem(12.5px);
-    position: absolute;
-    top: 0;
-    left: -2.5rem;
-  }
-  span {
-    color: #fc864d;
-  }
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.sec-08__picture-container {
-  padding: 1rem 0 1rem 0;
-  position: relative;
-  &::before {
-    display: block;
-    content: "";
-    width: 287px;
-    height: 1px;
-    background-color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   &::after {
     display: block;
     content: "";
-    width: 287px;
-    height: 1px;
-    background-color: #f2f2f2;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 72%;
+    left: 26%;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #edf7fa;
   }
 }
 
-.sec-08__picture {
-  display: block;
-  text-align: center;
+.sec-08__title {
+  margin-bottom: 2.1rem;
 }
 
-@media (min-width: 768px) {
-  .sec-08 {
-    padding-top: 3.3rem;
-  }
+.sec-08__right-side-container {
+  padding-top: 7.4rem;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .sec-08__title {
-    text-align: left;
-    padding-left: 4.5rem;
-    &::before {
-      width: 2.5rem;
-      left: 1.5rem;
-    }
-  }
-
-  .sec-08__subtitle {
-    width: 32rem;
-  }
-
-  .sec-08__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .sec-08__list-item {
-    width: 42%;
-  }
-
-  .sec-08__picture-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .sec-08__picture-container:after,
-  .sec-08__picture-container:before {
-    width: 100%;
+.sec-08__subtitle {
+  font-family: GothaR;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #787878;
+  line-height: pxToRem(25px);
+  padding-left: 1.3rem;
+  padding-right: 6.1rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    width: 2px;
+    background-color: #000;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
-@media (min-width: 1200px) {
-  .sec-08 {
-    padding-top: 6.2rem;
-    padding-bottom: 6.9rem;
-  }
+.sec-08__description-block {
+  margin-top: 8.3rem;
+}
 
-  .sec-08__title {
-    font-size: pxToRem(46px);
-    padding-left: 10.3rem;
-    margin-bottom: 2.7rem;
-    &::before {
-      width: 2.8rem;
-      left: 6.2rem;
-      top: 1.2rem;
-      height: 3px;
-    }
-  }
+.sec-08__img-name {
+  font-family: GothaB;
+  font-size: pxToRem(30px);
+  line-height: pxToRem(40px);
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
 
-  .sec-08__subtitle {
-    font-size: 1.2rem;
-    padding: 0 0 0 10.3rem;
-    width: 39rem;
-    letter-spacing: .4px;
-  }
-
-  .sec-08__list {
-    padding: 0 1rem 0 15.3rem;
-    margin-bottom: .5rem;
-  }
-
-  .sec-08__list-item {
-    font-size: pxToRem(18px);
-    margin-bottom: 3rem;
-    width: 43%;
-    &::before {
-      font-size: pxToRem(14px);
-    }
+.sec-08__img-position {
+  text-align: right;
+  font-family: GothaR;
+  font-size: 1rem;
+  padding-right: .3rem;
+  span {
+    font-family: GothaM;
+    color: #15b4af;
+    display: block;
+    margin-bottom: .6rem;
   }
 }

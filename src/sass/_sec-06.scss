@@ -1,243 +1,176 @@
 .sec-06 {
-  padding-top: 2.1rem;
-  padding-bottom: 2rem;
-  overflow-x: hidden;
-  .slides {
-    width: 284px !important;
-  }
-}
-
-.sec-06__title {
-  font-family: FuturaC;
-  font-size: 1.6rem;
-  padding-left: 4.4rem;
-  padding-right: 1rem;
-  letter-spacing: .6px;
-  line-height: 1.3;
+  padding-top: 5.2rem;
+  padding-bottom: 7rem;
   position: relative;
-  margin-bottom: 2.4rem;
   &::before {
     display: block;
     content: "";
     position: absolute;
-    width: 2.5rem;
-    top: 1rem;
-    left: .8rem;
-    height: 2px;
-    background-color: #282828;
+    top: 4.6rem;
+    left: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #edf7fa;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .owl-carousel {
+    .owl-item {
+      img  {
+        width: auto;
+      }
+    }
+  }
+
+  .owl-nav {
+    display: flex;
+    width: 5.6rem;
+    height: 3.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    div {
+      background-color: #fcfcfc;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:last-of-type {
+        background-color: #15b4af;
+        svg {
+          fill: #fff;
+        }
+      }
+      svg {
+        width: 1rem;
+        height: 1rem;
+        fill: #000;
+      }
+    }
   }
 }
 
-ul {
-  list-style: none;
+.sec-06__title {
+  margin-bottom: 1.7rem;
 }
 
-.sec-06__list {
-  padding: 0 1.9rem 0 4.5rem;
-}
-
-.sec-06__list-item {
-  margin-bottom: 1.6rem;
+.sec-06__subtitle {
+  font-family: GothaR;
+  font-size: pxToRem(20px);
+  color: #787878;
+  line-height: pxToRem(30px);
+  padding-left: 2.1rem;
+  padding-right: 3rem;
+  margin-bottom: 1.8rem;
   position: relative;
   &::before {
     display: block;
-    content: url("img/sec-06/triangle.png");
+    content: "";
+    width: 2px;
+    height: 2.9rem;
+    background-color: #000;
     position: absolute;
-    top: 0;
-    left: -2.3rem;
+    left: 0;
+    top: 0.5rem;
+  }
+  span {
+    font-family: GothaM;
+    color: #15b4af;
+  }
+}
+
+.sec-06__list {
+  list-style: none;
+  padding-left: 1.4rem;
+}
+
+.sec-06__list-item {
+  font-family: GothaR;
+  font-size: pxToRem(16px);
+  color: #787878;
+  line-height: pxToRem(25px);
+  padding-right: 5.7rem;
+  margin-bottom: .6rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    width: .4rem;
+    height: .4rem;
+    background-color: #15b4af;
+    position: absolute;
+    top: .4rem;
+    left: -1.3rem;
   }
   &:last-of-type {
     margin-bottom: 0;
   }
+  span {
+    font-family: GothaM;
+    color: #15b4af;
+  }
 }
 
-.sec-06__list-title {
-  font-family: FuturaCB;
+.sec-06__modal-btn {
+  display: flex;
+  justify-content: center;
+  font-family: GothaB;
+  font-size: pxToRem(14px);
+  color: #fff;
+  background-color: #15b4af;
+  width: 23.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  margin-top: 2.2rem;
+}
+
+.sec-06__slider-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: GothaB;
   font-size: 1rem;
-  margin-bottom: .8rem;
-  border-bottom: 4px solid #fc864d;
-  display: inline-block;
+  color: #999999;
+  margin-bottom: 1rem;
+  span:first-of-type {
+    color: #000;
+    margin-right: .2rem;
+  }
+
+  span:last-of-type {
+    margin-left: .2rem;
+  }
 }
 
-.sec-06__list__text {
-  font-family: FuturaL;
-  line-height: 1.2;
-}
-
-.sec-06__first-col {
-  margin-bottom: 3.7rem;
-}
-
-.sec-06__second-col {
+.sec-06__slider-container {
+  padding-top: 2rem;
   position: relative;
-}
-
-.sec-06__plaska {
-  background-color: #393939;
-  height: 13.6rem;
-  width: 67%;
-}
-
-.sec-06__slider {
-  height: 189px;
-  width: 284px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}
-
-.sec-06__slider-picture {
-  display: block;
-  width: 284px;
-  img {
-    width: 284px!important;
-  }
-}
-
-@media (min-width: 768px) {
-  .sec-06 {
-    .owl-carousel .owl-item {
-      img {
-        width: 400px!important;
-        height: 267px!important;
-      }
-    }
-
-    .owl-item.active {
-      width: 400px!important;
-      height: 267px!important;
-    }
-  }
-
-  .sec-06__title {
-    padding-right: 31%;
-  }
-
-  .sec-06__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .sec-06__list-item {
-    width: 49%;
-  }
-
-  .sec-06__list__text {
-    padding-right: 7rem;
-    font-size: 1.0625rem;
-  }
-
-  .sec-06__plaska {
-    height: 18rem;
-    width: 57%;
-  }
-
-  .sec-06__slider {
-    width: 400px;
-    height: 267px;
-    margin-right: 5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sec-06 {
-    padding-top: 5.3rem;
-    position: relative;
-    .owl-carousel .owl-item {
-      img {
-        width: 698px!important;
-        height: 466px!important;
-      }
-    }
-
-    .owl-item.active {
-      width: 698px!important;
-      height: 466px!important;
-    }
-  }
-
-  .sec-06__slider {
-    width: 698px;
-    height: 466px;
-    margin-right: 5rem;
-  }
-
-  .sec-06__title {
-    font-size: 1.875rem;
-    padding: 0;
-    margin-left: auto;
-    margin-right: 7.1rem;
-    width: 27rem;
-    line-height: 1.2;
-    letter-spacing: 0;
-    margin-bottom: 3.2rem;
-    &::before {
-      width: 2.8rem;
-      top: 1.1rem;
-      left: -4.2rem;
-      height: 3px;
-    }
-  }
-
-  .sec-06__list {
-    padding: 0;
-    margin-left: auto;
-    width: 29.2rem;
-    flex-direction: column;
-  }
-
-  .sec-06__list-title {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  .sec-06__list__text {
-    font-size: 1.1rem;
-    padding-right: 6rem;
-    line-height: 1.3;
-  }
-
-  .sec-06__list-item {
-    width: auto;
-    margin-bottom: 1.9rem;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  .sec-06__second-col {
+  width: pxToRem(570px);
+  &::before {
+    display: block;
+    content: "дізнайтесь";
+    font-family: GothaBL;
+    font-size: pxToRem(80px);
+    color: #eeeeee;
+    transform: rotate(90deg);
+    text-transform: uppercase;
     position: absolute;
-    top: 7rem;
-    left: 0;
-    width: 59.4rem;
+    top: 19.2rem;
+    right: -24.2rem;
+    letter-spacing: 3px
   }
 
-  .sec-06__plaska {
-    height: 34.2rem;
-    width: 66.5%;
-  }
-}
-
-@media (min-width: 1300px) and (max-width: 1500px) {
-  .sec-06__title {
-    margin-right: 1.1rem;
-  }
-
-  .sec-06__list {
-    width: 24.2rem;
-  }
-
-  .sec-06__second-col {
-    left: -9rem;
-  }
-
-  .sec-07 {
-    overflow-x: hidden;
-  }
-
-  .sec-07__picture {
-    right: -23rem;
+  &::after {
+    display: block;
+    content: "";
+    height: 25.1rem;
+    width: 37.6rem;
+    background-color: #fcfcfc;
+    position: absolute;
+    top: .3rem;
+    right: -12.2rem;
+    z-index: -1;
   }
 }

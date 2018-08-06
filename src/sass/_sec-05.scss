@@ -1,8 +1,29 @@
 .sec-05 {
   padding-top: 9.7rem;
   padding-bottom: 11.1rem;
+  position: relative;
   .container-fluid {
     padding: 0;
+  }
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 7.5rem;
+    right: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #edf7fa;
+  }
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    right: 52.7%;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #edf7fa;
   }
 }
 

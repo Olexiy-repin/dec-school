@@ -1,0 +1,35 @@
+.footer {
+  padding: 2rem 0;
+  .container-fluid {
+    padding: 0;
+  }
+  [class*=col-] {
+    display: flex;
+    align-items: center;
+    &:nth-of-type(n+2) {
+      padding-top: .5rem;
+    }
+  }
+}
+
+.footer__text {
+  font-family: GothaR;
+  font-size: 1rem;
+  background-color: #fff;
+  margin-left: .9rem;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: #000;
+  font-family: GothaM;
+  font-size: 1rem;
+  margin-right: 1.2rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    transition: all .5s linear;
+    color: #15b4af;
+  }
+}
