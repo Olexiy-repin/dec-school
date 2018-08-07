@@ -2,6 +2,7 @@
   padding-top: 5.2rem;
   padding-bottom: 7rem;
   position: relative;
+  overflow-x: hidden;
   &::before {
     display: block;
     content: "";
@@ -124,6 +125,11 @@
   text-transform: uppercase;
   padding: 1.5rem 0;
   margin-top: 2.2rem;
+  &:hover {
+    transition: all .5s linear;
+    background-color: #23d6d0;
+    color: #fff;
+  }
 }
 
 .sec-06__slider-nav {
@@ -172,5 +178,119 @@
     top: .3rem;
     right: -12.2rem;
     z-index: -1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sec-06 {
+    &::before {
+      top: 12.6rem;
+    }
+    .row {
+      [class*=col-]:first-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .sec-06__title {
+    text-align: center;
+    br {
+      content: "";
+      &::after {
+        content: "\00a0";
+      }
+    }
+  }
+
+  .sec-06__subtitle {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding: 0 8rem;
+    margin-bottom: 2rem;
+    &::before {
+      top: 0;
+      left: 7rem;
+    }
+  }
+
+  .sec-06__list {
+    padding-left: 9.4rem;
+  }
+
+  .sec-06__list-item {
+    padding: 0;
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .sec-06__modal-btn {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .sec-06__slider-container {
+    margin: auto;
+    &::after {
+      top: 1.4rem;
+      right: -4.2rem;
+    }
+
+    &::before {
+      top: 20.2rem;
+      right: -20.4rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-06 {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    overflow-y: hidden;
+  }
+
+  .sec-06__subtitle {
+    padding: 0 1rem;
+    &::before {
+      display: none;
+    }
+  }
+
+  .sec-06__title {
+    font-size: pxToRem(36px);
+  }
+
+  .sec-06__list {
+    padding-left: 4.4rem;
+  }
+
+  .sec-06__list-item {
+    padding-right: 3rem;
+  }
+
+  .sec-06 .owl-carousel .owl-item img {
+    width: 300px;
+  }
+
+  .sec-06__slider-container {
+    width: 300px;
+  }
+
+  .sec-06__slider-container::before {
+    top: 1.6rem;
+    right: 0rem;
+    transform: rotate(0);
+    font-size: 1.8rem;
+  }
+
+  .sec-06__slider-container::after {
+    width: 300px;
+    left: 0;
+  }
+
+  .sec-06 .owl-nav {
+    width: 3.6rem;
+    height: 2.8rem;
   }
 }

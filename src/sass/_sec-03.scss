@@ -1,4 +1,6 @@
 .sec-03 {
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding-top: 5.1rem;
   position: relative;
   padding-bottom: 4.3rem;
@@ -9,7 +11,7 @@
     display: block;
     content: "";
     position: absolute;
-    bottom: -3rem;
+    bottom: 0rem;
     left: 0;
     width: 7.5rem;
     height: 7.5rem;
@@ -34,4 +36,39 @@
 .sec-03__card-img {
   display: block;
   margin-bottom: 1.8rem;
+}
+
+@media (max-width: 1199px) {
+  .sec-03 {
+    padding-bottom: 2.3rem;
+    .row {
+      display: flex;
+      justify-content: center;
+      [class*=col-]:nth-of-type(-n+2) {
+        margin-bottom: 2rem;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-03 {
+    .container-fluid {
+      padding: 0 15px;
+    }
+  }
+
+  .sec-03__card-text {
+    padding-right: 3rem;
+  }
+
+  .sec-03 .row [class*=col-] {
+    margin-bottom: 2rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

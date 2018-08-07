@@ -15,6 +15,11 @@ body {
   counter-reset: section08Counter;
 }
 
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0!important
+}
+
 a {
   text-decoration: none;
 }

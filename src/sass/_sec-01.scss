@@ -1,4 +1,5 @@
 .sec-01 {
+  overflow-x: hidden;
   background-image: url("img/sec-01/bg-lg.png");
   background-position: center;
   background-size: contain;
@@ -113,7 +114,6 @@
 }
 .sec-01__btn {
   position: relative;
-  z-index: -1;
   display: flex;
   justify-content: center;
   font-family: GothaB;
@@ -125,6 +125,11 @@
   text-transform: uppercase;
   letter-spacing: 2.7px;
   margin-top: -.2rem;
+  &:hover {
+    transition: all .5s linear;
+    background-color: #23d6d0;
+    color: #fff;
+  }
 }
 
 // THIRD COL
@@ -159,5 +164,127 @@
   line-height: pxToRem(25px);
   span {
     color: #15b4af;
+  }
+}
+
+.sec-01__header-geolocation-mob {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .sec-01 {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sec-01 .logo-container {
+    img {
+      display: block;
+      width: 175px;
+      height: auto;
+    }
+  }
+
+  .sec-01 .row:last-of-type [class*=col-]:last-of-type {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .sec-01 .row:last-of-type [class*=col-]:first-of-type {
+    padding-top: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .sec-01 .row:last-of-type [class*=col-]:first-of-type::after {
+    display: none;
+  }
+
+  .sec-01__header {
+    padding: 0 1rem;
+    align-items: center;
+  }
+
+  .sec-01 .logo-container {
+    margin-bottom: 0;
+  }
+
+  .sec-01__header-geolocation-desc {
+    display: none;
+  }
+
+  .sec-01__header-geolocation-mob {
+    display: flex;
+    margin-bottom: 0;
+    font-size: .9rem;
+    i {
+      margin-right: .5rem;
+    }
+  }
+
+  .sec-01__header-telephone {
+    font-size: .9rem;
+  }
+
+  .sec-01__date {
+    text-align: center;
+  }
+
+  .main-title-container {
+    text-align: center;
+  }
+
+  .sec-01__after-title-container {
+    text-align: center;
+  }
+
+  .sec-01__form-text {
+    padding: 0 10rem;
+  }
+
+  .main-img-container {
+    align-items: center;
+    img {
+      width: 274px;
+    }
+  }
+
+  .sec-01__btn {
+    margin: auto;
+    width: 19rem;
+  }
+
+  .sec-01__right-side-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-01__header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sec-01 .logo-container {
+    margin-bottom: 1rem;
+  }
+
+  .sec-01__header-geolocation-mob {
+    margin-bottom: 1rem;
+  }
+
+  .main-title-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .sec-01__form-text {
+    padding: 0;
+  }
+
+  .sec-01__btn {
+    width: 95%;
+  }
+
+  .sec-01__right-side-text {
+    padding: 0 1rem;
   }
 }

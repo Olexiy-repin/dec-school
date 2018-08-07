@@ -11,25 +11,64 @@
 
 #myModal {
   border: none;
+  .registration {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    ::-webkit-input-placeholder {font-family:GothaM;font-size:pxToRem(14px);color:#000;}
+    ::-moz-placeholder          {font-family:GothaM;font-size:pxToRem(14px);color:#000;}/* Firefox 19+ */
+    :-moz-placeholder           {font-family:GothaM;font-size:pxToRem(14px);color:#000;}/* Firefox 18- */
+    :-ms-input-placeholder      {font-family:GothaM;font-size:pxToRem(14px);color:#000;}
+  }
   .sec-10__form-input {
-    color: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-family: GothaM;
+    font-size: 14px;
+    padding-bottom: .3rem;
   }
   .field {
     margin-bottom: 2rem;
     &:last-of-type {
-      margin-bottom: 0;
+      margin-bottom: 2rem;
     }
   }
-  input[type="submit"] {
+
+  .sec-10__form-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #15b4af;
+    text-transform: uppercase;
+    font-family: GothaB;
+    font-size: 14px;
+    padding: 1rem 0;
+    margin: auto;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 3px;
     &:hover {
-      background-color: #fff;
-      color: #000;
+      transition: all .5s linear;
+      background-color: #23d6d0;
+      color: #fff;
     }
   }
 }
 
+.sec-10__form-input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.sec-10__form-input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.sec-10__form-input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.sec-10__form-input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.sec-10__form-input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.sec-10__form-input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.sec-10__form-input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.sec-10__form-input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
 .modal-content {
-  background-color: #393939;
+  background-color: #fff;
 }
 
 .myModal__form-title {
@@ -44,7 +83,7 @@
 #myModal .form-container {
   margin: auto;
   box-shadow: 0 0 0 0;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .modal-content {
@@ -59,18 +98,18 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
   #myModal .form-container {
-    padding: 0 5rem;
+    padding: 0 3rem;
     width: 100%;
   }
 
   .modal-content {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }
 
 @media (min-width: 1200px) {
   .modal-content {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   #myModal .form-container {
