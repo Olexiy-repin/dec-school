@@ -75,6 +75,53 @@
   }
 }
 
+@keyframes rotate {
+  from   {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.sec-07__play-btn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    transition: all .5s linear;
+    transform: translate(-50%, -50%) scale(.9) ;
+  }
+  .sec-07__play-btn-0 {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sec-07__play-btn-01 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .sec-07__play-btn-02 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 1199px) {
   .sec-07 {
     padding-bottom: 4rem;

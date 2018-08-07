@@ -40,6 +40,16 @@ a {
 	font-size: 2.5rem;
 }
 
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
 @font-face {
 	font-family: GilroyL;
 	src: url("fonts/GilroyL.woff") format("woff"), url("fonts/GilroyL.woff2") format("woff2");
@@ -882,8 +892,8 @@ a {
 	position: absolute;
 	bottom: 0rem;
 	left: 0;
-	width: 7.5rem;
-	height: 7.5rem;
+	width: 4.5rem;
+	height: 4.5rem;
 	background-color: #edf7fa;
 }
 
@@ -1503,6 +1513,58 @@ a {
 	z-index: -1;
 }
 
+.sec-07__play-btn {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.sec-07__play-btn:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	-webkit-transform: translate(-50%, -50%) scale(0.9);
+	transform: translate(-50%, -50%) scale(0.9);
+}
+
+.sec-07__play-btn .sec-07__play-btn-0 {
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.sec-07__play-btn .sec-07__play-btn-01 {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-animation-name: rotate;
+	animation-name: rotate;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+.sec-07__play-btn .sec-07__play-btn-02 {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 .sec-08 {
 	padding-top: 3.9rem;
 	padding-bottom: 5rem;
@@ -1728,6 +1790,10 @@ a {
 	overflow-x: hidden;
 }
 
+.sec-10 .sec-01__header-telephone {
+	margin-bottom: 2rem;
+}
+
 .sec-10 .container-fluid {
 	padding: 0;
 }
@@ -1746,7 +1812,7 @@ a {
 
 .sec-10 .sec-01__form-text {
 	padding-right: 0;
-	margin-bottom: 4.4rem;
+	margin-bottom: 1.4rem;
 }
 
 .sec-10 .main-title-container {
@@ -2568,7 +2634,7 @@ img.mfp-img {
 	margin: auto;
 	color: #fff;
 	cursor: pointer;
-	letter-spacing: 3px;
+	letter-spacing: 1.5px;
 }
 
 #myModal .sec-10__form-btn:hover {
@@ -2580,50 +2646,50 @@ img.mfp-img {
 
 .sec-10__form-input::-webkit-input-placeholder {
 	text-indent: 0px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input::-moz-placeholder {
 	text-indent: 0px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:-moz-placeholder {
 	text-indent: 0px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:-ms-input-placeholder {
 	text-indent: 0px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:focus::-webkit-input-placeholder {
 	text-indent: 500px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:focus::-moz-placeholder {
 	text-indent: 500px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:focus:-moz-placeholder {
 	text-indent: 500px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .sec-10__form-input:focus:-ms-input-placeholder {
 	text-indent: 500px;
-	-webkit-transition: text-indent 0.3s ease;
-	transition: text-indent 0.3s ease;
+	-webkit-transition: text-indent 0.5s ease;
+	transition: text-indent 0.5s ease;
 }
 
 .modal-content {
@@ -2632,11 +2698,12 @@ img.mfp-img {
 
 .myModal__form-title {
 	text-align: center;
-	font-family: FuturaCB;
-	font-size: 1.875rem;
+	font-family: GothaB;
+	font-size: 1.25rem;
 	text-transform: uppercase;
-	color: #fff;
-	margin-bottom: 2.5rem;
+	color: #000;
+	margin-bottom: 2rem;
+	line-height: 1.3;
 }
 
 #myModal .form-container {
@@ -2715,6 +2782,19 @@ img.mfp-img {
 }
 
 @media (min-width: 1200px) {
+
+.footer .row [class*=col-]:nth-of-type(2) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.footer .row [class*=col-]:nth-of-type(2) P {
+	margin-left: 0;
+}
 
 #terms {
 	padding: 0.5rem 0 1.3rem 0;
@@ -3174,6 +3254,10 @@ img.mfp-img {
 	width: 400px;
 	margin-right: 0;
 	margin-left: 1rem;
+}
+
+.sec-10 .sec-01__header-telephone {
+	display: none;
 }
 
 .sec-10 .sec-01__header-geolocation {
@@ -3740,13 +3824,49 @@ img.mfp-img {
 
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fadeIn {
 
-0% {
+from {
+	opacity: 0;
+}
+
+to {
 	opacity: 1;
 }
 
-100% {
+}
+
+@keyframes fadeIn {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@-webkit-keyframes fadeOut {
+
+from {
+	opacity: 1;
+}
+
+to {
+	opacity: 0;
+}
+
+}
+
+@keyframes fadeOut {
+
+from {
+	opacity: 1;
+}
+
+to {
 	opacity: 0;
 }
 
@@ -3760,6 +3880,34 @@ img.mfp-img {
 
 100% {
 	opacity: 0;
+}
+
+}
+
+@-webkit-keyframes rotate {
+
+from {
+	-webkit-transform: translate(-50%, -50%) rotate(0);
+	transform: translate(-50%, -50%) rotate(0);
+}
+
+to {
+	-webkit-transform: translate(-50%, -50%) rotate(360deg);
+	transform: translate(-50%, -50%) rotate(360deg);
+}
+
+}
+
+@keyframes rotate {
+
+from {
+	-webkit-transform: translate(-50%, -50%) rotate(0);
+	transform: translate(-50%, -50%) rotate(0);
+}
+
+to {
+	-webkit-transform: translate(-50%, -50%) rotate(360deg);
+	transform: translate(-50%, -50%) rotate(360deg);
 }
 
 }
