@@ -227,16 +227,6 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
   $('.sec-08').slick({
-    verticalSwiping: true
+    // verticalSwiping: true
   });
-
-  $('.sec-08').on('wheel', (function(e) {
-  e.preventDefault();
-
-  if (e.originalEvent.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-}));
 });
