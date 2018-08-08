@@ -193,6 +193,10 @@
     }
   }
 
+  .sec-04__title {
+    font-size: pxToRem(36px);
+  }
+
   .sec-04 [class*=col-]:last-of-type::after {
     display: none;
   }

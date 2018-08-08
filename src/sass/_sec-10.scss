@@ -18,7 +18,7 @@
       padding-top: 9.5rem;
     }
     [class*=col-]:last-of-type {
-      padding-top: 12.9rem;
+      padding-top: 9.5rem;
     }
   }
 
@@ -28,7 +28,7 @@
 
   .sec-01__form-text {
     padding-right: 0;
-    margin-bottom: 1.4rem;
+    margin-bottom: 4.4rem;
   }
 
   .main-title-container {
@@ -182,6 +182,14 @@
 }
 
 @media (max-width: 767px) {
+  .sec-10 {
+    .row {
+      [class*=col-]:last-of-type {
+        order: 3;
+      }
+    }
+  }
+
   .sec-10__list {
     padding-left: 3.7rem;
   }

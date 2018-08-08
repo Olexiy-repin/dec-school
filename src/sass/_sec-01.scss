@@ -5,7 +5,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
-  padding-top: 3.7rem;
+  padding-top: 1rem;
   padding-bottom: 7.5rem;
   z-index: 0;
   position: relative;
@@ -18,13 +18,13 @@
   .row:last-of-type [class*=col-]:first-of-type {
     padding-top: 4.2rem;
     position: relative;
-    &::after {
-      display: block;
-      content: url("img/sec-01/arrow.png");
-      position: absolute;
-      bottom: 0.7rem;
-      right: 0.7rem;
-    }
+    // &::after {
+    //   display: block;
+    //   content: url("img/sec-01/arrow.png");
+    //   position: absolute;
+    //   bottom: 0.7rem;
+    //   right: 0.7rem;
+    // }
   }
   .row:last-of-type [class*=col-]:last-of-type {
     padding-top: 7.4rem;
@@ -108,7 +108,7 @@
   flex-direction: column;
   img {
     display: block;
-    width: 404px;
+    width: 340px;
     margin-left: -0.4rem;
   }
 }
@@ -174,7 +174,16 @@
 @media (max-width: 1199px) {
   .sec-01 {
     padding-top: 2rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 25rem;
+    .main-img-container {
+      img {
+        order: 2;
+        position: absolute;
+        bottom: -32.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 
   .sec-01 .logo-container {
@@ -192,7 +201,7 @@
 
   .sec-01 .row:last-of-type [class*=col-]:first-of-type {
     padding-top: 2.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .sec-01 .row:last-of-type [class*=col-]:first-of-type::after {
@@ -231,6 +240,7 @@
 
   .main-title-container {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .sec-01__after-title-container {
@@ -255,10 +265,35 @@
 
   .sec-01__right-side-text {
     text-align: center;
+    br {
+      content: " ";
+      &::after {
+        content: "\00a0";
+      }
+    }
   }
 }
 
 @media (max-width: 767px) {
+  .sec-01 {
+    padding-top: .5rem;
+    padding-bottom: 23.5rem;
+    position: relative;
+    .main-img-container {
+      img {
+        bottom: -32.5rem;
+      }
+    }
+  }
+
+  .sec-01__title {
+    font-size: 5.375rem;
+  }
+
+  .sec-01__subtitle {
+    font-size: 2rem;
+  }
+
   .sec-01__header {
     flex-direction: column;
     justify-content: center;
@@ -273,7 +308,7 @@
   }
 
   .main-title-container {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .sec-01__form-text {
@@ -282,9 +317,14 @@
 
   .sec-01__btn {
     width: 95%;
+    margin-bottom: 2rem;
   }
 
   .sec-01__right-side-text {
     padding: 0 1rem;
+  }
+
+  .sec-01 .row:last-of-type [class*=col-]:first-of-type {
+    margin-bottom: 1rem;
   }
 }

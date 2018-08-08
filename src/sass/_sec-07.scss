@@ -125,16 +125,20 @@
 @media (max-width: 1199px) {
   .sec-07 {
     padding-bottom: 4rem;
+    .container-fluid {
+      padding: 0 15px;
+    }
     &::before {
       top: 13.3rem;
     }
     .sec-06__list {
       padding: 0;
+      text-align: left;
     }
 
     .sec-06__list-item {
       padding-right: 0;
-      text-align: center;
+      text-align: left;
       padding: 0 5rem;
       &::before {
         top: .4rem;
@@ -167,14 +171,11 @@
     padding: 0 15px;
     padding-top: 2rem;
   }
-
-  .sec-07__list-title {
-    text-align: center;
-  }
 }
 
 @media (max-width: 767px) {
   .sec-07 {
+    padding-left: 1rem;
     &::before {
       display: none;
     }
@@ -186,7 +187,7 @@
   }
 
   .sec-07__title {
-    font-size: pxToRem(36px);
+    font-size: pxToRem(38px);
   }
 
   .sec-07__default-img {

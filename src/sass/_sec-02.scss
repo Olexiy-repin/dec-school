@@ -78,7 +78,7 @@
 @media (max-width: 1199px) {
   .sec-02 {
     padding-top: 6.2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     .row {
       [class*=col-]:first-of-type {
         margin-bottom: 2rem;
@@ -99,18 +99,23 @@
 
   .sec-02__text-container {
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .sec-02__list-item {
     padding-right: 0;
-    padding: 0 6rem;
+    padding: 0 6rem 0 0;
     margin-bottom: 1rem;
+    text-align: left;
+    &::before {
+      left: -1rem;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .sec-02 {
+    padding: 0 1rem;
     padding-bottom: 2rem;
   }
 
@@ -136,10 +141,17 @@
   }
 
   .sec-02__list {
-    padding-left: 0;
+    padding-left: 1rem;
   }
 
   .sec-02__list-item {
     padding: 0;
+    &::before {
+      left: -1rem;
+    }
+  }
+
+  .sec-02 .row [class*=col-]:first-of-type {
+    margin-bottom: 3rem;
   }
 }
